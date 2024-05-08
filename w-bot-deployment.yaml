@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: w-bot-deployment
+  namespace: boeva-av
+  labels:
+    app: w-bot
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: w-bot
+  template:
+    metadata:
+      labels:
+        app: w-bot
+    spec:
+      containers:
+        - name: w-bot
+          image: { registry }:latest
+          ports:
+            - containerPort: 5001
