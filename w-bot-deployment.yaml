@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: w-bot
-          image: { registry }:latest
+          image: boevav/w-bot:latest
           ports:
             - containerPort: 5001
