@@ -9,8 +9,8 @@
 - name: Create K8S resource
   hosts: localhost
   tasks:
-  - name: Get K8S namespace
-    kubernetes.core.k8s:
-      apply: true
-      namespace: "boeva-av"
-      template: ./w-bot-deployment.yaml
+    - name: Get K8S namespace
+      kubernetes.core.k8s:
+        apply: true
+        namespace: "boeva-av"
+        template: ./w-bot-deployment.yaml
