@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: w-bot
-          image: boevav/w-bot:latest
+          image: boevav/w-bot:second
           ports:
-            - containerPort: 5001
+            - containerPort: 5000
